@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+  <!-- Metas -->
+  <meta charset="utf-8">
+  <meta name="description" content="Hoja de Vida Digital">
+  <meta name="author" content="Mauricio Poveda">
+  <meta name="keywords" content="next_u, fundamentos, html, css, responsive, rwd">
+  <!-- format-detection - https://gist.github.com/yuezk/15c5bb1370e30d0a2a60 -->
+  <meta name="format-detection" content="telephone=no,date=no,address=no,email=no,url=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Css -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  <title>Curriculum Vitae</title>
+</head>
+
+<body>
+  <header>
+    <img src="assets/images/logo.svg" alt="MPM" title="abreviación del nombre de autor" border="2" style="width: 200px" />
+    <hgroup>
+      <h1>Curriculum Vitae</h1>
+      <h2>Datos Personales</h2>
+    </hgroup>
+    <ul class="personal_info">
+      <li class="personal_info"><b>Nombre </b><em>John Doe</em></li>
+      <li class="personal_info"><b>Cumpleaños </b><em>09.04.1970</em>
+        <spam> (día/mes/año)</spam>
+      </li>
+      <li class="personal_info"><b>Lugar de Nacimiento </b><em>Sydney</em></li>
+      <li class="personal_info"><b>Nacionalidad </b><em>Australian</em></li>
+    </ul>
+  </header>
+  <nav>
+    <ul class="nav">
+      <li class="nav"><a href="index.html">Inicio</a></li>
+      <li class="nav"><a class="active" href="educacion.html">Educación</a></li>
+      <li class="nav"><a href="experiencia.html">Experiencia</a></li>
+    </ul>
+  </nav>
+  <section>
+    <h2>Educación</h2>
+    <table border="1" align="center">
+      <thead>
+        <tr>
+          <th>Año</th>
+          <th>Institución</th>
+          <th>Lugar</th>
+          <th>Culminó?</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1990</td>
+          <td>aliqua quid</td>
+          <td>tamen</td>
+          <td>Y</td>
+        </tr>
+        <tr>
+          <td>1995</td>
+          <td>irure sunt magna</td>
+          <td>fugiat</td>
+          <td>Y</td>
+        </tr>
+        <tr>
+          <td>2000</td>
+          <td>sint legam</td>
+          <td>summis</td>
+          <td>N</td>
+        </tr>
+      </tbody>
+    </table>
+    <h1>Agregar Estududios</h1>
+    <form autocomplete="on" name="estudios" class="pure-form">
+      <fieldset>
+        <legend>Nuevo Estudio</legend>
+        <p>
+          <label for="anio">Año:*</label>
+          <select name="select">
+            <option value="1">2017</option>
+            <option value="2" >2018</option>
+            <option value="3" selected>2019</option>
+          </select>
+        </p>
+        <p>
+          <label for="institucion">Institución:*</label>
+          <input id="institucion" type="text" placeholder="Digita Institución" tabindex="1" required>
+        </p>
+        <p>
+          <label for="lugar">Lugar:* </label>
+          <input id="lugar" name="lugar" placeholder="Digita Lugar" type="text" tabindex="2" required>
+        </p>
+        <p>
+          <button type="submit">Enviar</button>
+        </p>
+
+      </fieldset>
+    </form>
+  </section>
+  <footer>
+    <address>
+      You can contact author at <a href="http://www.somedomain.com/contact">www.somedomain.com</a>.<br>
+      If you see any bugs, please <a href="mailto:webmaster@somedomain.com">contact webmaster</a>.<br>
+      You may also want to visit us:<br>
+      Mozilla Foundation<br>
+      1981 Landings Drive<br>
+      Building K<br>
+      Mountain View, CA 94043-0801<br>
+      USA
+    </address>
+  </footer>
+
+
+
+</body>
+
+</html>
